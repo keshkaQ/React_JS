@@ -1,14 +1,13 @@
-const hello = require("./utils/message");
+const { hello, square } = require("./utils/message");
 const os = require("os");
 const path = require("path");
 const fs = require("fs");
 const { Chalk } = require("chalk");
-const square = require("./utils/message");
 const chalk = new Chalk();
 
 console.log(chalk.blue("\nСвой модуль (message)"));
 hello();
-console.log("Квадрат числа 3 равен " ,square(3));
+console.log("Квадрат числа 3 равен ", square(3));
 
 console.log(chalk.cyan.bold("\nВерсия Node.js"));
 console.log(chalk.green(process.version));

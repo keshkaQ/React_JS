@@ -1,0 +1,3 @@
+Node.js is great
+I like programming
+This is a simple task
