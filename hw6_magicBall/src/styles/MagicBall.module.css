@@ -1,0 +1,44 @@
+.title {
+  color: #c084fc;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  letter-spacing: 0.05em;
+}
+
+.ball {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 35% 35%,
+    #4b3a8a,
+    #1a0a3a 70%,
+    #000 100%
+  );
+  box-shadow:
+    0 0 50px rgba(160, 100, 255, 0.5),
+    inset 0 0 40px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.innerCircle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #1e1060, #0d0730);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border: 2px solid rgba(160, 100, 255, 0.3);
+}
+
+.answer {
+  color: #c084fc;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.5;
+}

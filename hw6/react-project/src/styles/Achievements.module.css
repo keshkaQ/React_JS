@@ -1,0 +1,31 @@
+.sectionTitle {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+.statRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.statRow:last-child {
+  border-bottom: none;
+}
+
+.statValue {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111;
+  min-width: 40px;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: #555;
+}
