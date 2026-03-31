@@ -1,0 +1,33 @@
+﻿.menu {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 12px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+}
+
+.link {
+  display: inline-block;
+  padding: 8px 12px;
+  color: var(--color-link);
+  text-decoration: none;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: #fbfcff;
+}
+
+.link:hover {
+  background: #eef3ff;
+}

@@ -1,0 +1,14 @@
+﻿.card {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.image {
+  min-height: 170px;
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+}

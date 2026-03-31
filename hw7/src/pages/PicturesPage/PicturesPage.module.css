@@ -1,0 +1,17 @@
+﻿.gallery {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.item {
+  margin: 0;
+  padding: 10px;
+}
+
+.image {
+  height: 170px;
+}
+
+.caption {
+  margin-top: 8px;
+  font-weight: 600;
+}

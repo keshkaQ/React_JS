@@ -1,0 +1,33 @@
+.details {
+  height: fit-content;
+  min-height: 220px;
+  padding: 16px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  background-color: var(--color-gray-1);
+}
+
+.title {
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.placeholder {
+  color: var(--color-gray-4);
+}
+
+.row {
+  display: grid;
+  row-gap: 4px;
+  margin-top: 12px;
+}
+
+.label {
+  font-size: 12px;
+  color: var(--color-gray-4);
+}
+
+.value {
+  color: var(--color-dark-1);
+}

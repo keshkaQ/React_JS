@@ -1,0 +1,41 @@
+<div class="page">
+  <section class="section">
+    <h2>Цитаты Билл Гейтса</h2>
+    <ul>
+      @for (quote of quotes; track quote) {
+        <li>{{ quote }}</li>
+      }
+    </ul>
+  </section>
+
+  <section class="section bio">
+    <img
+      src="https://avatars.mds.yandex.net/i?id=f5b3ea392c13b61f71067d5de35191c2_l-5331568-images-thumbs&n=13"
+      alt="Bill Gates"
+      class="portrait"
+    />
+    <div class="bio-text">
+      <h2>Билл Гейтс</h2>
+      <p>
+        Уильям Генри Гейтс III (род. 28 октября 1955) — американский предприниматель, программист и
+        филантроп. Сооснователь корпорации <strong>Microsoft</strong>, которую он основал вместе с
+        Полом Алленом в 1975 году.
+      </p>
+      <p>
+        С 2000 года активно занимается благотворительностью через
+        <strong>Фонд Билла и Мелинды Гейтс</strong>.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Ресурсы о Билле Гейтсе</h2>
+    <ul class="links">
+      @for (link of links; track link.url) {
+        <li>
+          <a [href]="link.url" target="_blank">{{ link.label }}</a>
+        </li>
+      }
+    </ul>
+  </section>
+</div>

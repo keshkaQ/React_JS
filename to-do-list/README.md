@@ -1,12 +1,81 @@
-# React + Vite
+# Task Catalog (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Одностраничное приложение для управления задачами: создание, поиск, фильтрация, отметка выполнения, удаление и просмотр деталей выбранной задачи.
 
-Currently, two official plugins are available:
+## Возможности
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Загрузка задач с локального API (`json-server`)
+- Добавление задачи через форму с валидацией
+- Поиск по названию и описанию
+- Фильтрация по статусу: `All / Active / Done`
+- Переключение статуса выполнения задачи
+- Удаление одной задачи и удаление всех задач
+- Панель деталей выбранной задачи
+- Состояния загрузки и ошибок API
+- Базовая адаптивность интерфейса
 
-## Expanding the ESLint configuration
+## Стек
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite
+- SCSS Modules
+- JSON Server (локальный mock API)
+
+## Быстрый старт
+
+```bash
+npm install
+```
+
+1. Запустить API:
+
+```bash
+npm run server
+```
+
+2. Запустить фронтенд:
+
+```bash
+npm run dev
+```
+
+3. Открыть в браузере:
+
+```text
+http://localhost:5173
+```
+
+API по умолчанию: `http://localhost:3001/tasks`.
+
+## Скрипты
+
+- `npm run dev` - запуск Vite dev server
+- `npm run server` - запуск JSON Server (`db.json5`)
+- `npm run build` - production-сборка
+- `npm run preview` - локальный preview production-сборки
+- `npm run lint` - проверка ESLint
+
+## Структура проекта
+
+```text
+src/
+  app/            # точка сборки приложения и глобальные стили
+  entities/       # доменные сущности (todo + модель + UI)
+  features/       # пользовательские сценарии (add/search/filter/details/stats)
+  pages/          # страницы приложения
+  shared/         # общие UI-компоненты, API, utils, assets
+  widgets/        # композиция экрана (ToDo)
+```
+
+## Архитектурные решения
+
+- Центральная бизнес-логика задач сосредоточена в `useTasks` (`useReducer` + async-операции).
+- Доступ к состоянию и действиям организован через `TasksContext`.
+- Локальные стили компонентов реализованы через SCSS Modules.
+- Для подсветки поискового совпадения используется безопасная HTML-экранизация перед `dangerouslySetInnerHTML`.
+
+## Ограничения текущей версии
+
+- Приложение работает как одна SPA-страница без отдельного маршрута деталей.
+- API рассчитан на локальный запуск `json-server`.
+

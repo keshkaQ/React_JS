@@ -1,0 +1,50 @@
+﻿.detailCard {
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) minmax(260px, 1fr);
+  gap: 16px;
+}
+
+.image {
+  min-height: 300px;
+}
+
+.content {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.meta {
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.meta div {
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: #fafcff;
+}
+
+.meta dt {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.meta dd {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 800px) {
+  .detailCard {
+    grid-template-columns: 1fr;
+  }
+}

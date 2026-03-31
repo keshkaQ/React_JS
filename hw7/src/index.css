@@ -1,0 +1,29 @@
+﻿:root {
+  --color-bg: #f5f7fb;
+  --color-card: #ffffff;
+  --color-border: #d7dce5;
+  --color-text: #1f2937;
+  --color-muted: #5b6475;
+  --color-link: #244a9b;
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

@@ -1,0 +1,23 @@
+.filter {
+  display: grid;
+  row-gap: 4px;
+}
+
+.label {
+  font-size: 12px;
+  color: var(--color-gray-4);
+}
+
+.select {
+  height: var(--input-height);
+  padding-inline: 12px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  background-color: var(--color-white);
+
+  &:hover,
+  &:focus {
+    border-color: var(--color-dark-2);
+    outline: none;
+  }
+}

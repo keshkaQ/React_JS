@@ -1,0 +1,81 @@
+.todo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  width: 100%;
+  max-width: 1080px;
+  min-height: 520px;
+  padding: 24px;
+  background-color: var(--color-white);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.title {
+  text-align: left;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.toolbar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 12px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr);
+  gap: 20px;
+}
+
+.list,
+.emptyMessage {
+  &:empty {
+    display: none;
+  }
+}
+
+.list {
+  --todoListRowGap: 8px;
+
+  display: grid;
+  row-gap: var(--todoListRowGap);
+  min-height: 100px;
+}
+
+.loadingMessage,
+.errorMessage,
+.emptyMessage {
+  display: grid;
+  place-items: center;
+  min-height: 120px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+.emptyMessage {
+  color: var(--color-gray-4);
+}
+
+.loadingMessage {
+  color: var(--color-dark-2);
+  background-color: var(--color-gray-1);
+}
+
+.errorMessage {
+  color: #b00020;
+  background-color: #fff1f1;
+}
+
+@media (max-width: 920px) {
+  .toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+}

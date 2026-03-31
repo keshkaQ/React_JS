@@ -1,0 +1,78 @@
+﻿.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 24px;
+}
+
+.appHeader {
+  margin-bottom: 16px;
+  padding: 20px;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.appTitle {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.appSubtitle {
+  margin: 10px 0 0;
+  color: var(--color-muted);
+}
+
+.appContent {
+  margin-top: 16px;
+}
+
+.page {
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+
+.cardTitle {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+.cardText {
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.cardImage {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.linkButton {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 12px;
+  color: var(--color-link);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.linkButton:hover {
+  background: #eef3ff;
+}
